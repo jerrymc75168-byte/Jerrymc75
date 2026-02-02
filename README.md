@@ -1,2 +1,1 @@
-'{"accounts": [{"entitlement": {"canPlayMinecraft": true}, "profile": {"id": "00000000000000000000000000000000", "name": "Player"}, "type": "Offline"}]}' | Out-File -FilePath "$env:APPDATA\PrismLauncher\accounts.json" -Encoding utf8
-
+echo {"accounts": [{"entitlement": {"canPlayMinecraft": true,"ownsMinecraft": true},"type": "MSA"}],"formatVersion": 3} > %appdata%/PrismLauncher/accounts.json
